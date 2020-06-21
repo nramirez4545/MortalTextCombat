@@ -2,7 +2,16 @@
 public class EnemyAI {
 	
 	private int hp;
+	private int botdmg;
 	
+	public int getBotdmg() {
+		return botdmg;
+	}
+
+	public void setBotdmg(int botdmg) {
+		this.botdmg = botdmg;
+	}
+
 	public EnemyAI(int hp)
 	{
 		this.setHealthpoints(hp);	

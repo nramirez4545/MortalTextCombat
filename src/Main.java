@@ -6,11 +6,12 @@ public class Main {
 		//Character objects
 		Characters raymond = new Characters(100, "Raymond", 25);
 		Characters nick = new Characters(100, "Nick", 5);
-		Menu menu1 = new Menu();
+		Menu menu1 = new Menu();	
 		menu1.choices();
 		Scanner scan5 = new Scanner(System.in);
-		
-
+		if (scan5.nextInt() == 1) {
+			raymond.easyBattle();
+		}
 	}
 
 }
