@@ -22,7 +22,8 @@ public class FightClass {
 		while (this.hp > 0 && bot.getHealthpoints() > 0) {
 			System.out.println("Type 1 to attack.");
 			Scanner input = new Scanner(System.in);
-			if (input.nextInt() == 1) {
+			int choice = input.nextInt();
+			if (choice == 1) {
 				this.dmg = rand.nextInt(20);
 				System.out.println("You hit the enemy for " + this.dmg + " damage.");
 				System.out.println(" ");
@@ -41,7 +42,7 @@ public class FightClass {
 					System.out.println("AI health: " + bot.getHealthpoints());
 				}
 			}
-			if (input.nextInt() == 2) {
+			if (choice == 2) {
 				if (this.hp > 85) {
 					this.hp = 100;
 				} else {
