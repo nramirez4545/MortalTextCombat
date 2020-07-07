@@ -46,11 +46,25 @@ public class FightClass {
 			}
 			if (choice == 2) {
 				if (this.hp > 85) {
-					this.hp = 100;
-				} else {
-					this.hp = this.hp + 15;
+					if (this.healingPotion > 0) {
+						this.hp = 100;
+						this.healingPotion--;
+						System.out.println("You've used a healing potion.");
+					}
+					else {
+						System.out.println("You don't have any healing potions.");
+					}
 				}
-				System.out.println("Your health has increased to " + this.hp);
+				if (this.hp <= 85) {
+					if (this.healingPotion > 0) {
+						this.hp += 15;
+						this.healingPotion--;
+						System.out.println("You've used a healing potion.");
+					}
+					else {
+						System.out.println("You don't have any healing potions.");
+					}
+				}
 			}
 			if (this.hp <= 0) {
 				System.out.println("You have died. The enemy has won.");

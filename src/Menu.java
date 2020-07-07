@@ -12,7 +12,7 @@ public class Menu {
 	
 	public void shopChoices() {
 		System.out.println("1. Buy healing potion for 50 XP");
-		System.out.println("2. Buy stenght potions for 50 XP");
+		System.out.println("2. Buy stength potions for 50 XP");
 		System.out.println("3. Buy damage resistance potions for 50 XP");
 		System.out.println("4. Exit shop");
 	}
