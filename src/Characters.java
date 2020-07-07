@@ -43,10 +43,10 @@ public class Characters {
 	public void gotoShop() {
 		Shop shopping = new Shop(this.xp, this.healingPotion, this.damagePotion, this.resistancePotion);
 		shopping.Buy();
-		shopping.getHealingPotion();
-		shopping.getXp();
-		shopping.getResistancePotion();
-		shopping.getDamagePotion();
+		this.healingPotion=shopping.getHealingPotion();
+		this.xp=shopping.getXp();
+		this.resistancePotion=shopping.getResistancePotion();
+		this.damagePotion=shopping.getDamagePotion();
 		
 	}
 	
