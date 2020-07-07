@@ -9,21 +9,27 @@ public class Characters {
 	private int dmg;
 	EnemyAI bot = new EnemyAI(100);
 	private int xp;
-	private Inventory r1;
+	private int healingPotion;
+	private int damagePotion;
+	private int resistancePotion;
+	
 
-	public Characters(int hp, String name, int strength, int xp, Inventory r1) {
+	public Characters(int hp, String name, int strength, int xp, int healingPotion, int damagePotion, int resistancePotion) {
 		
 		this.hp = hp;
 		this.name = name;
 		this.strength= strength;
 		this.xp = xp;
-		this.r1 = r1;
+		this.healingPotion = healingPotion;
+		this.damagePotion = damagePotion;
+		this.resistancePotion = resistancePotion;
 	}
 	
 	@Override
 	public String toString() {
-		return "Characters [hp=" + hp + ", name=" + name + ", strength=" + strength + ", dmg=" + dmg + ", bot=" + bot
-				+ ", xp=" + xp + ", r1=" + r1 + "]";
+		return "Characters [hp=" + hp + ", name=" + name + ", strength=" + strength + ", dmg=" + dmg + ", xp=" + xp
+				+ ", healingPotion=" + healingPotion + ", damagePotion=" + damagePotion + ", resistancePotion="
+				+ resistancePotion + "]";
 	}
 
 	public void easyBattle() {
