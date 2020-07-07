@@ -32,8 +32,9 @@ public class Shop  {
 		Scanner scan5 = new Scanner(System.in);
 		int choices = scan5.nextInt();
 		if (choices == 1) {
-			
-			
+			System.out.println("You've bought the healing potion for 50 xp.");
+			this.healingPotion += 1;
+			this.xp -= 50;
 		}
 		
 	
