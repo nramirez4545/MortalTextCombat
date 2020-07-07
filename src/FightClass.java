@@ -15,14 +15,16 @@ public class FightClass {
 	public void easy() {
 
 		Random rand = new Random();
-
+		
 		System.out.println("Starting Battle!");
 		System.out.println("Player health: " + this.hp);
 		System.out.println("AI health: " + bot.getHealthpoints());
 		while (this.hp > 0 && bot.getHealthpoints() > 0) {
+			
 			System.out.println("Type 1 to attack.");
 			Scanner input = new Scanner(System.in);
 			int choice = input.nextInt();
+			System.out.println(new String(new char[70]).replace("\0", "\r\n"));
 			if (choice == 1) {
 				this.dmg = rand.nextInt(20);
 				System.out.println("You hit the enemy for " + this.dmg + " damage.");
@@ -58,6 +60,7 @@ public class FightClass {
 				System.out.println("The enemy has died. You have won.");
 				System.out.println("VICTORY!");
 			}
+			
 		}
 	}
 

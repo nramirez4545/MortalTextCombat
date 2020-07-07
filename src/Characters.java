@@ -37,6 +37,18 @@ public class Characters {
 		easyfight.easy();
 		
 	}
+
+
+
+	public void gotoShop() {
+		Shop shopping = new Shop(this.xp, this.healingPotion, this.damagePotion, this.resistancePotion);
+		shopping.Buy();
+		shopping.getHealingPotion();
+		shopping.getXp();
+		shopping.getResistancePotion();
+		shopping.getDamagePotion();
+		
+	}
 	
 	
 }

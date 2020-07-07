@@ -9,12 +9,13 @@ public class Main {
 		Menu menu1 = new Menu();
 		menu1.battleChoices();
 		Scanner scan5 = new Scanner(System.in);
+		System.out.println(raymond);
 		int choice = scan5.nextInt();
 		if (choice == 1) {
 			raymond.easyBattle();
 		}
 		if (choice == 2) {
-			Shop rshop = new Shop(raymond);
+			raymond.gotoShop();
 		}
 	}
 
