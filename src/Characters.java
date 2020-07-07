@@ -33,8 +33,9 @@ public class Characters {
 	}
 
 	public void easyBattle() {
-		FightClass easyfight = new FightClass (this.hp, this.dmg);
+		FightClass easyfight = new FightClass (this.hp, this.dmg, this.healingPotion);
 		easyfight.easy();
+		this.healingPotion = easyfight.getHealingPotion();
 		
 	}
 

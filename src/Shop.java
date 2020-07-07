@@ -16,15 +16,6 @@ public class Shop  {
 		this.resistancePotion = resistancePotion;
 	}
 
-
-
-
-
-
-
-
-
-
 	public void Buy() {
 		menu.shopChoices();
 		Scanner scan5 = new Scanner(System.in);
@@ -50,33 +41,21 @@ public class Shop  {
 		return xp;
 	}
 
-	public void setXp(int xp) {
-		this.xp = xp;
-	}
 
 	public int getHealingPotion() {
 		return healingPotion;
 	}
 
-	public void setHealingPotion(int healingPotion) {
-		this.healingPotion = healingPotion;
-	}
 
 	public int getDamagePotion() {
 		return damagePotion;
 	}
 
-	public void setDamagePotion(int damagePotion) {
-		this.damagePotion = damagePotion;
-	}
 
 	public int getResistancePotion() {
 		return resistancePotion;
 	}
 
-	public void setResistancePotion(int resistancePotion) {
-		this.resistancePotion = resistancePotion;
-	}
 	
 
 	}

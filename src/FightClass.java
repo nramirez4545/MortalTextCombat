@@ -6,10 +6,12 @@ public class FightClass {
 	private int hp;
 	EnemyAI bot = new EnemyAI(100);
 	private int dmg;
+	private int healingPotion;
 
-	public FightClass(int hp, int dmg) {
+	public FightClass(int hp, int dmg, int healingPotion) {
 		this.hp = hp;
 		this.dmg = dmg;
+		this.healingPotion = healingPotion;
 	}
 
 	public void easy() {
@@ -18,6 +20,7 @@ public class FightClass {
 		
 		System.out.println("Starting Battle!");
 		System.out.println("Player health: " + this.hp);
+		System.out.println("Player Potions: "+this.healingPotion);
 		System.out.println("AI health: " + bot.getHealthpoints());
 		while (this.hp > 0 && bot.getHealthpoints() > 0) {
 			
@@ -77,5 +80,11 @@ public class FightClass {
 			
 		}
 	}
+
+	public int getHealingPotion() {
+		return healingPotion;
+	}
+
+	
 
 }

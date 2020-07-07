@@ -4,7 +4,7 @@ public class Menu {
 	}
 	public void battleChoices() {
 		System.out.println("1. Quick Attack");
-		System.out.println("2. Healing");
+		System.out.println("2. Shop");
 		System.out.println("3. Resistance");
 		System.out.println("4. Strength");
 		System.out.println("5. Open Inventory");
