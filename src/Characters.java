@@ -12,6 +12,8 @@ public class Characters {
 	private int healingPotion;
 	private int damagePotion;
 	private int resistancePotion;
+	private boolean dmgAmp;
+	private boolean dmgResist;
 	
 
 	public Characters(int hp, String name, int strength, int xp, int healingPotion, int damagePotion, int resistancePotion) {
@@ -33,10 +35,11 @@ public class Characters {
 	}
 
 	public void easyBattle() {
-		FightClass easyfight = new FightClass (this.hp, this.dmg, this.healingPotion);
+		FightClass easyfight = new FightClass (this.hp, this.dmg, this.healingPotion, this.damagePotion, this.dmgAmp, this.xp);
 		easyfight.easy();
 		this.healingPotion = easyfight.getHealingPotion();
-		
+		this.damagePotion = easyfight.getDamagePotion();
+		this.xp = easyfight.getXP();
 	}
 
 

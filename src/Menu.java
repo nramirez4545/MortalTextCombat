@@ -20,7 +20,7 @@ public class Menu {
 	public void mainMenu() {
 		System.out.println("1. Enter battle");
 		System.out.println("2. Enter shop");
-		System.out.println("3. Save");
+		System.out.println("3. Check stats");
 		System.out.println("4. Load");
 	}
 }
