@@ -15,7 +15,7 @@ public class Main {
 		
 
 		do {
-			menu1.battleChoices();
+			menu1.mainMenu();
 			choice = scan5.nextInt();
 			{
 				
